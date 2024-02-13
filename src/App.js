@@ -169,6 +169,7 @@ function App() {
     setTimeout(() => {
       setShowMessage(true);
       setShowYesNoButtons(true);
+     
     }, 3000); // Show message and buttons after 3 seconds
   };
   
@@ -181,7 +182,7 @@ function App() {
   };
 
   const clickedYes = () => {
-    setLoveMessage(`You are the answer to every prayer I've offered. I’m so thankful for all that you do for me. Thank you for making me feel this way. Happy Valentine’s Day my love.`);
+    setLoveMessage(`You are the sweetest thing about my day. I’m so thankful for all that you do for me. Thank you for making me feel this way. Happy Valentine’s Day my love.`);
     setShowLoveMessage(true)
     setHideHeader(true)
   };
@@ -255,6 +256,7 @@ function App() {
           </button>
         </div>
       )}
+      {showYesNoButtons && showMessage&&<div></div>}
       {showLoveMessage && (
         <div className="valentineTwo">
           <p>{loveMessage}</p>
